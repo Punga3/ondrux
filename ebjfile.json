@@ -1,0 +1,29 @@
+{
+	"paths":{
+		"buildb":"build/bin/",
+		"src":"src/"
+	},
+	"files":{
+		"__c":{
+			"e":".c",
+			"p":"src",
+			"o":"__o"
+		},
+		"__gas":{
+			"e":".s",
+			"p":"src",
+			"o":"__o"
+		},
+		"__o":{
+			"e":".o",
+			"p":"buildb"
+		}
+	},
+	"cmds":[
+		["i686-elf-as __i -o __o","__gas"],
+		["i686-elf-gcc -c __i -o __o -std=gnu99 -ffreestanding -O2 -Wall -Wextra","__c"],
+		["i686-elf-gcc -T linker.ld -o build/isodir/boot/ondřux.bin -ffreestanding -O2 -nostdlib __all__o -lgcc",null],
+		["cp grub.cfg build/isodir/boot/grub/grub.cfg",null],
+		["grub-mkrescue -o build/iso/ondrux.iso build/isodir",null]
+	]
+}
