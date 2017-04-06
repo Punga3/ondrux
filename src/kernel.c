@@ -15,14 +15,9 @@ void kernel_main(multiboot_info_t* mbd, unsigned int magic) {
 	//print_mmap_info();
 	odio_clear();
 	print_str("mmap adress: ");
-	hex_dump(&mmap_start);
+	hex_dump((uint32_t)&mmap_start);
 	print_str_ln("");
 	extern char *__kernel_end;
-	extern char *__kernel_pre_bss;
-	extern char *__kernel_start;
+	print_str_ln("");
 	hex_dump((uint32_t)__kernel_end);
-	print_str_ln("");
-	hex_dump((uint32_t)__kernel_pre_bss);
-	print_str_ln("");
-	hex_dump((uint32_t)__kernel_start);
 }

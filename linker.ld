@@ -13,7 +13,6 @@ SECTIONS
 	/* First put the multiboot header, as it is required to be put very early
 	   early in the image or the bootloader won't recognize the file format.
 	   Next we'll put the .text section. */
-		 __kernel_start=.;
 	.text BLOCK(4K) : ALIGN(4K)
 	{
 		*(.multiboot)
@@ -30,7 +29,6 @@ SECTIONS
 	{
 		*(.data)
 	}
-	 __kernel_pre_bss=.;
 	/* Read-write data (uninitialized) and stack */
 	.bss BLOCK(4K) : ALIGN(4K)
 	{
