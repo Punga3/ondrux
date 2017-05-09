@@ -1,6 +1,4 @@
-/* Surely you will remove the processor conditionals and this comment
-   appropriately depending on whether or not you use C++. */
-#include <stdbool.h> /* C doesn't have booleans by default. */
+#include <stdbool.h>
 #include <stdint.h>
 #include "odio.h"
 #include "multiboot.h"
@@ -12,12 +10,6 @@ void kernel_main(multiboot_info_t* mbd, unsigned int magic) {
 		return;
 	}
 	init_memory(mbd);
-	//print_mmap_info();
-	odio_clear();
-	print_str("mmap adress: ");
-	hex_dump((uint32_t)&mmap_start);
-	print_str_ln("");
-	extern char *__kernel_end;
-	print_str_ln("");
-	hex_dump((uint32_t)__kernel_end);
+	print_mmap_info();
+	print_str_ln("Test!");
 }
