@@ -1,12 +1,13 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "multiboot.h"
-#include "odio.h"
+#include "otty.h"
 #define MULTIBOOT_FLAG_0 (0x1)
 #define MULTIBOOT_FLAG_6 (0x1<<5)
 #define MAX_MEMORY_REGIONS 256
 memory_map_t* mmap_start;
 memory_map_t* mmap_array[MAX_MEMORY_REGIONS];
+uint64_t ram_len=0;
 uint8_t mmap_array_len;
 void init_memory(multiboot_info_t* mbd){
 	if(!(mbd->flags&MULTIBOOT_FLAG_0)){
@@ -29,7 +30,10 @@ void init_memory(multiboot_info_t* mbd){
 	mmap_start = (memory_map_t*) mbd->mmap_addr;
 	memory_map_t* mmap = mmap_start;
 	while((size_t)mmap < mbd->mmap_addr + mbd->mmap_length) {
-		mmap_array[i++]=mmap;
+		if(mmap->type==1){
+			mmap_array[i++]=mmap;
+			ram_len+=mmap->length_high*0xFFFFFFFF+mmap->length_low;
+		}
 		mmap = (memory_map_t*) ( (unsigned int)mmap + mmap->size + sizeof(mmap->size) );
 	}
 	mmap_array_len=i;

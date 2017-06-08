@@ -1,0 +1,123 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EXT_C	multiboot.h	38;"	d
+EXT_C	multiboot.h	40;"	d
+GDT	gdt.c	/^}GDT;$/;"	t	typeref:struct:__anon1	file:
+MAX_MEMORY_REGIONS	memory.c	7;"	d	file:
+MEMORY_H	memory.h	2;"	d
+MULTIBOOT_BOOTLOADER_MAGIC	multiboot.h	31;"	d
+MULTIBOOT_FLAG_0	memory.c	5;"	d	file:
+MULTIBOOT_FLAG_6	memory.c	6;"	d	file:
+MULTIBOOT_HEADER_FLAGS	multiboot.h	25;"	d
+MULTIBOOT_HEADER_FLAGS	multiboot.h	27;"	d
+MULTIBOOT_HEADER_MAGIC	multiboot.h	21;"	d
+NUM_BUFFER_LEN	odio.c	96;"	d	file:
+ODIO_H	odio.h	2;"	d
+STACK_SIZE	multiboot.h	34;"	d
+VGA_COLOR_BLACK	odio.c	/^	VGA_COLOR_BLACK = 0,$/;"	e	enum:vga_color	file:
+VGA_COLOR_BLUE	odio.c	/^	VGA_COLOR_BLUE = 1,$/;"	e	enum:vga_color	file:
+VGA_COLOR_BROWN	odio.c	/^	VGA_COLOR_BROWN = 6,$/;"	e	enum:vga_color	file:
+VGA_COLOR_CYAN	odio.c	/^	VGA_COLOR_CYAN = 3,$/;"	e	enum:vga_color	file:
+VGA_COLOR_DARK_GREY	odio.c	/^	VGA_COLOR_DARK_GREY = 8,$/;"	e	enum:vga_color	file:
+VGA_COLOR_GREEN	odio.c	/^	VGA_COLOR_GREEN = 2,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_BLUE	odio.c	/^	VGA_COLOR_LIGHT_BLUE = 9,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_BROWN	odio.c	/^	VGA_COLOR_LIGHT_BROWN = 14,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_CYAN	odio.c	/^	VGA_COLOR_LIGHT_CYAN = 11,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_GREEN	odio.c	/^	VGA_COLOR_LIGHT_GREEN = 10,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_GREY	odio.c	/^	VGA_COLOR_LIGHT_GREY = 7,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_MAGENTA	odio.c	/^	VGA_COLOR_LIGHT_MAGENTA = 13,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_RED	odio.c	/^	VGA_COLOR_LIGHT_RED = 12,$/;"	e	enum:vga_color	file:
+VGA_COLOR_MAGENTA	odio.c	/^	VGA_COLOR_MAGENTA = 5,$/;"	e	enum:vga_color	file:
+VGA_COLOR_RED	odio.c	/^	VGA_COLOR_RED = 4,$/;"	e	enum:vga_color	file:
+VGA_COLOR_WHITE	odio.c	/^	VGA_COLOR_WHITE = 15,$/;"	e	enum:vga_color	file:
+VGA_HEIGHT	odio.c	/^static const uint32_t VGA_HEIGHT = 25;$/;"	v	file:
+VGA_WIDTH	odio.c	/^static const uint32_t VGA_WIDTH = 80;$/;"	v	file:
+_start	boot.s	/^_start:$/;"	l
+addr	multiboot.h	/^      unsigned long addr;$/;"	m	struct:aout_symbol_table
+addr	multiboot.h	/^      unsigned long addr;$/;"	m	struct:elf_section_header_table
+aout_sym	multiboot.h	/^        aout_symbol_table_t aout_sym;$/;"	m	union:multiboot_info::__anon2
+aout_symbol_table	multiboot.h	/^    typedef struct aout_symbol_table$/;"	s
+aout_symbol_table_t	multiboot.h	/^    } aout_symbol_table_t;$/;"	t	typeref:struct:aout_symbol_table
+base_addr_high	multiboot.h	/^      unsigned long base_addr_high;$/;"	m	struct:memory_map
+base_addr_low	multiboot.h	/^      unsigned long base_addr_low;$/;"	m	struct:memory_map
+boot_device	multiboot.h	/^      unsigned long boot_device;$/;"	m	struct:multiboot_info
+bss_end_addr	multiboot.h	/^      unsigned long bss_end_addr;$/;"	m	struct:multiboot_header
+checksum	multiboot.h	/^      unsigned long checksum;$/;"	m	struct:multiboot_header
+cmdline	multiboot.h	/^      unsigned long cmdline;$/;"	m	struct:multiboot_info
+elf_sec	multiboot.h	/^        elf_section_header_table_t elf_sec;$/;"	m	union:multiboot_info::__anon2
+elf_section_header_table	multiboot.h	/^    typedef struct elf_section_header_table$/;"	s
+elf_section_header_table_t	multiboot.h	/^    } elf_section_header_table_t;$/;"	t	typeref:struct:elf_section_header_table
+entry_addr	multiboot.h	/^      unsigned long entry_addr;$/;"	m	struct:multiboot_header
+flags	multiboot.h	/^      unsigned long flags;$/;"	m	struct:multiboot_header
+flags	multiboot.h	/^      unsigned long flags;$/;"	m	struct:multiboot_info
+header_addr	multiboot.h	/^      unsigned long header_addr;$/;"	m	struct:multiboot_header
+hex_dump	odio.c	/^void hex_dump(uint32_t n){$/;"	f
+init_memory	memory.c	/^void init_memory(multiboot_info_t* mbd){$/;"	f
+kernel_main	kernel.c	/^void kernel_main(multiboot_info_t* mbd, unsigned int magic) {$/;"	f
+length_high	multiboot.h	/^      unsigned long length_high;$/;"	m	struct:memory_map
+length_low	multiboot.h	/^      unsigned long length_low;$/;"	m	struct:memory_map
+load_addr	multiboot.h	/^      unsigned long load_addr;$/;"	m	struct:multiboot_header
+load_end_addr	multiboot.h	/^      unsigned long load_end_addr;$/;"	m	struct:multiboot_header
+magic	multiboot.h	/^      unsigned long magic;$/;"	m	struct:multiboot_header
+mem_lower	multiboot.h	/^      unsigned long mem_lower;$/;"	m	struct:multiboot_info
+mem_upper	multiboot.h	/^      unsigned long mem_upper;$/;"	m	struct:multiboot_info
+memory_map	multiboot.h	/^    typedef struct memory_map$/;"	s
+memory_map_t	multiboot.h	/^    } memory_map_t;$/;"	t	typeref:struct:memory_map
+mmap_addr	multiboot.h	/^      unsigned long mmap_addr;$/;"	m	struct:multiboot_info
+mmap_array	memory.c	/^memory_map_t* mmap_array[MAX_MEMORY_REGIONS];$/;"	v
+mmap_array	memory.h	/^memory_map_t** mmap_array;$/;"	v
+mmap_array_len	memory.c	/^uint8_t mmap_array_len;$/;"	v
+mmap_array_len	memory.h	/^uint8_t mmap_array_len;$/;"	v
+mmap_length	multiboot.h	/^      unsigned long mmap_length;$/;"	m	struct:multiboot_info
+mmap_start	memory.c	/^memory_map_t* mmap_start;$/;"	v
+mmap_start	memory.h	/^memory_map_t* mmap_start;$/;"	v
+mod_end	multiboot.h	/^      unsigned long mod_end;$/;"	m	struct:module
+mod_start	multiboot.h	/^      unsigned long mod_start;$/;"	m	struct:module
+mods_addr	multiboot.h	/^      unsigned long mods_addr;$/;"	m	struct:multiboot_info
+mods_count	multiboot.h	/^      unsigned long mods_count;$/;"	m	struct:multiboot_info
+module	multiboot.h	/^    typedef struct module$/;"	s
+module_t	multiboot.h	/^    } module_t;$/;"	t	typeref:struct:module
+multiboot_header	multiboot.h	/^    typedef struct multiboot_header$/;"	s
+multiboot_header_t	multiboot.h	/^    } multiboot_header_t;$/;"	t	typeref:struct:multiboot_header
+multiboot_info	multiboot.h	/^    typedef struct multiboot_info$/;"	s
+multiboot_info_t	multiboot.h	/^    } multiboot_info_t;$/;"	t	typeref:struct:multiboot_info
+num	multiboot.h	/^      unsigned long num;$/;"	m	struct:elf_section_header_table
+num_buffer	odio.c	/^char num_buffer[NUM_BUFFER_LEN];$/;"	v
+odio_clear	odio.c	/^void odio_clear(){$/;"	f
+odio_init	odio.c	/^void odio_init(void) {$/;"	f
+print_mmap_info	memory.c	/^void print_mmap_info(){$/;"	f
+print_num	odio.c	/^void print_num(uint32_t n) {$/;"	f
+print_num_base	odio.c	/^void print_num_base(uint32_t n,uint32_t base) {$/;"	f
+print_num_hex	odio.c	/^void print_num_hex(uint32_t n) {$/;"	f
+print_num_hex_ln	odio.c	/^void print_num_hex_ln(uint32_t n) {$/;"	f
+print_num_ln	odio.c	/^void print_num_ln(uint32_t n) {$/;"	f
+print_str	odio.c	/^void print_str(const char* data) {$/;"	f
+print_str_ln	odio.c	/^void print_str_ln(const char* data) {$/;"	f
+reserved	multiboot.h	/^      unsigned long reserved;$/;"	m	struct:aout_symbol_table
+reserved	multiboot.h	/^      unsigned long reserved;$/;"	m	struct:module
+shndx	multiboot.h	/^      unsigned long shndx;$/;"	m	struct:elf_section_header_table
+size	multiboot.h	/^      unsigned long size;$/;"	m	struct:elf_section_header_table
+size	multiboot.h	/^      unsigned long size;$/;"	m	struct:memory_map
+stack_bottom	boot.s	/^stack_bottom:$/;"	l
+stack_top	boot.s	/^stack_top:$/;"	l
+string	multiboot.h	/^      unsigned long string;$/;"	m	struct:module
+strlen	odio.c	/^uint32_t strlen(const char* str) {$/;"	f
+strsize	multiboot.h	/^      unsigned long strsize;$/;"	m	struct:aout_symbol_table
+tabsize	multiboot.h	/^      unsigned long tabsize;$/;"	m	struct:aout_symbol_table
+terminal_buffer	odio.c	/^uint16_t* terminal_buffer;$/;"	v
+terminal_color	odio.c	/^uint8_t terminal_color;$/;"	v
+terminal_column	odio.c	/^uint32_t terminal_column;$/;"	v
+terminal_putchar	odio.c	/^void terminal_putchar(char c) {$/;"	f
+terminal_putentryat	odio.c	/^void terminal_putentryat(char c, uint8_t color, uint32_t x, uint32_t y) {$/;"	f
+terminal_row	odio.c	/^uint32_t terminal_row;$/;"	v
+terminal_setcolor	odio.c	/^void terminal_setcolor(uint8_t color) {$/;"	f
+terminal_write	odio.c	/^void terminal_write(const char* data, uint32_t size) {$/;"	f
+type	multiboot.h	/^      unsigned long type;$/;"	m	struct:memory_map
+u	multiboot.h	/^      } u;$/;"	m	struct:multiboot_info	typeref:union:multiboot_info::__anon2
+vga_color	odio.c	/^enum vga_color {$/;"	g	file:
+vga_entry	odio.c	/^static inline uint16_t vga_entry(unsigned char uc, uint8_t color) {$/;"	f	file:
+vga_entry_color	odio.c	/^static inline uint8_t vga_entry_color(enum vga_color fg, enum vga_color bg) {$/;"	f	file:

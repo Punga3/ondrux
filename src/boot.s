@@ -18,7 +18,9 @@
 stack_bottom:
 .skip 16384 # 16 KiB
 stack_top:
-
+.skip 1
+idtr:
+.skip 0x100
 # Ondřux start point
 .section .text
 .global _start
@@ -31,6 +33,9 @@ _start:
 	# Push 
 	push %eax
 	push %ebx
+
+	# Align
+	# TODO
 
 	# Call kernel
 	call kernel_main

@@ -1,0 +1,143 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EXT_C	src/multiboot.h	38;"	d
+EXT_C	src/multiboot.h	40;"	d
+GDT	src/gdt.c	/^}GDT;$/;"	t	typeref:struct:__anon1	file:
+HWIO_H	src/hwio.h	2;"	d
+MAX_MEMORY_REGIONS	src/memory.c	7;"	d	file:
+MEMORY_H	src/memory.h	2;"	d
+MMAN_H	src/mman.h	2;"	d
+MULTIBOOT_BOOTLOADER_MAGIC	src/multiboot.h	31;"	d
+MULTIBOOT_FLAG_0	src/memory.c	5;"	d	file:
+MULTIBOOT_FLAG_6	src/memory.c	6;"	d	file:
+MULTIBOOT_HEADER_FLAGS	src/multiboot.h	25;"	d
+MULTIBOOT_HEADER_FLAGS	src/multiboot.h	27;"	d
+MULTIBOOT_HEADER_MAGIC	src/multiboot.h	21;"	d
+NUM_BUFFER_LEN	src/otty.c	121;"	d	file:
+OBISH_H	src/obish.h	2;"	d
+OTTY_H	src/otty.h	2;"	d
+PS2KEYBOARD_H	src/ps2keyboard.h	2;"	d
+STACK_SIZE	src/multiboot.h	34;"	d
+VGA_COLOR_BLACK	src/otty.c	/^	VGA_COLOR_BLACK = 0,$/;"	e	enum:vga_color	file:
+VGA_COLOR_BLUE	src/otty.c	/^	VGA_COLOR_BLUE = 1,$/;"	e	enum:vga_color	file:
+VGA_COLOR_BROWN	src/otty.c	/^	VGA_COLOR_BROWN = 6,$/;"	e	enum:vga_color	file:
+VGA_COLOR_CYAN	src/otty.c	/^	VGA_COLOR_CYAN = 3,$/;"	e	enum:vga_color	file:
+VGA_COLOR_DARK_GREY	src/otty.c	/^	VGA_COLOR_DARK_GREY = 8,$/;"	e	enum:vga_color	file:
+VGA_COLOR_GREEN	src/otty.c	/^	VGA_COLOR_GREEN = 2,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_BLUE	src/otty.c	/^	VGA_COLOR_LIGHT_BLUE = 9,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_BROWN	src/otty.c	/^	VGA_COLOR_LIGHT_BROWN = 14,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_CYAN	src/otty.c	/^	VGA_COLOR_LIGHT_CYAN = 11,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_GREEN	src/otty.c	/^	VGA_COLOR_LIGHT_GREEN = 10,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_GREY	src/otty.c	/^	VGA_COLOR_LIGHT_GREY = 7,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_MAGENTA	src/otty.c	/^	VGA_COLOR_LIGHT_MAGENTA = 13,$/;"	e	enum:vga_color	file:
+VGA_COLOR_LIGHT_RED	src/otty.c	/^	VGA_COLOR_LIGHT_RED = 12,$/;"	e	enum:vga_color	file:
+VGA_COLOR_MAGENTA	src/otty.c	/^	VGA_COLOR_MAGENTA = 5,$/;"	e	enum:vga_color	file:
+VGA_COLOR_RED	src/otty.c	/^	VGA_COLOR_RED = 4,$/;"	e	enum:vga_color	file:
+VGA_COLOR_WHITE	src/otty.c	/^	VGA_COLOR_WHITE = 15,$/;"	e	enum:vga_color	file:
+VGA_HEIGHT	src/otty.c	/^static const uint32_t VGA_HEIGHT = 25;$/;"	v	file:
+VGA_WIDTH	src/otty.c	/^static const uint32_t VGA_WIDTH = 80;$/;"	v	file:
+_start	src/boot.s	/^_start:$/;"	l
+addr	src/multiboot.h	/^      unsigned long addr;$/;"	m	struct:aout_symbol_table
+addr	src/multiboot.h	/^      unsigned long addr;$/;"	m	struct:elf_section_header_table
+alloc_base	src/mman.c	/^char *alloc_base;$/;"	v
+alloc_base	src/mman.h	/^char *alloc_base;$/;"	v
+aout_sym	src/multiboot.h	/^        aout_symbol_table_t aout_sym;$/;"	m	union:multiboot_info::__anon2
+aout_symbol_table	src/multiboot.h	/^    typedef struct aout_symbol_table$/;"	s
+aout_symbol_table_t	src/multiboot.h	/^    } aout_symbol_table_t;$/;"	t	typeref:struct:aout_symbol_table
+base_addr_high	src/multiboot.h	/^      unsigned long base_addr_high;$/;"	m	struct:memory_map
+base_addr_low	src/multiboot.h	/^      unsigned long base_addr_low;$/;"	m	struct:memory_map
+boot_device	src/multiboot.h	/^      unsigned long boot_device;$/;"	m	struct:multiboot_info
+bss_end_addr	src/multiboot.h	/^      unsigned long bss_end_addr;$/;"	m	struct:multiboot_header
+checksum	src/multiboot.h	/^      unsigned long checksum;$/;"	m	struct:multiboot_header
+cmdline	src/multiboot.h	/^      unsigned long cmdline;$/;"	m	struct:multiboot_info
+elf_sec	src/multiboot.h	/^        elf_section_header_table_t elf_sec;$/;"	m	union:multiboot_info::__anon2
+elf_section_header_table	src/multiboot.h	/^    typedef struct elf_section_header_table$/;"	s
+elf_section_header_table_t	src/multiboot.h	/^    } elf_section_header_table_t;$/;"	t	typeref:struct:elf_section_header_table
+entry_addr	src/multiboot.h	/^      unsigned long entry_addr;$/;"	m	struct:multiboot_header
+flags	src/multiboot.h	/^      unsigned long flags;$/;"	m	struct:multiboot_header
+flags	src/multiboot.h	/^      unsigned long flags;$/;"	m	struct:multiboot_info
+getScancode	src/ps2keyboard.c	/^char getScancode()$/;"	f
+getchar	src/ps2keyboard.c	/^char getchar()$/;"	f
+header_addr	src/multiboot.h	/^      unsigned long header_addr;$/;"	m	struct:multiboot_header
+hex_dump	src/otty.c	/^void hex_dump(uint32_t n){$/;"	f
+idtr	src/boot.s	/^idtr:$/;"	l
+inb	src/hwio.h	/^static inline uint8_t inb(uint16_t port)$/;"	f
+init_memory	src/memory.c	/^void init_memory(multiboot_info_t* mbd){$/;"	f
+kernel_main	src/kernel.c	/^void kernel_main(multiboot_info_t* mbd, unsigned int magic) {$/;"	f
+length_high	src/multiboot.h	/^      unsigned long length_high;$/;"	m	struct:memory_map
+length_low	src/multiboot.h	/^      unsigned long length_low;$/;"	m	struct:memory_map
+load_addr	src/multiboot.h	/^      unsigned long load_addr;$/;"	m	struct:multiboot_header
+load_end_addr	src/multiboot.h	/^      unsigned long load_end_addr;$/;"	m	struct:multiboot_header
+magic	src/multiboot.h	/^      unsigned long magic;$/;"	m	struct:multiboot_header
+malloc	src/mman.c	/^void* malloc(uint32_t size){$/;"	f
+mem_lower	src/multiboot.h	/^      unsigned long mem_lower;$/;"	m	struct:multiboot_info
+mem_upper	src/multiboot.h	/^      unsigned long mem_upper;$/;"	m	struct:multiboot_info
+memory_map	src/multiboot.h	/^    typedef struct memory_map$/;"	s
+memory_map_t	src/multiboot.h	/^    } memory_map_t;$/;"	t	typeref:struct:memory_map
+mman_init	src/mman.c	/^void mman_init(char *alloc_start){$/;"	f
+mmap_addr	src/multiboot.h	/^      unsigned long mmap_addr;$/;"	m	struct:multiboot_info
+mmap_array	src/memory.c	/^memory_map_t* mmap_array[MAX_MEMORY_REGIONS];$/;"	v
+mmap_array	src/memory.h	/^memory_map_t** mmap_array;$/;"	v
+mmap_array_len	src/memory.c	/^uint8_t mmap_array_len;$/;"	v
+mmap_array_len	src/memory.h	/^uint8_t mmap_array_len;$/;"	v
+mmap_length	src/multiboot.h	/^      unsigned long mmap_length;$/;"	m	struct:multiboot_info
+mmap_start	src/memory.c	/^memory_map_t* mmap_start;$/;"	v
+mmap_start	src/memory.h	/^memory_map_t* mmap_start;$/;"	v
+mod_end	src/multiboot.h	/^      unsigned long mod_end;$/;"	m	struct:module
+mod_start	src/multiboot.h	/^      unsigned long mod_start;$/;"	m	struct:module
+mods_addr	src/multiboot.h	/^      unsigned long mods_addr;$/;"	m	struct:multiboot_info
+mods_count	src/multiboot.h	/^      unsigned long mods_count;$/;"	m	struct:multiboot_info
+module	src/multiboot.h	/^    typedef struct module$/;"	s
+module_t	src/multiboot.h	/^    } module_t;$/;"	t	typeref:struct:module
+multiboot_header	src/multiboot.h	/^    typedef struct multiboot_header$/;"	s
+multiboot_header_t	src/multiboot.h	/^    } multiboot_header_t;$/;"	t	typeref:struct:multiboot_header
+multiboot_info	src/multiboot.h	/^    typedef struct multiboot_info$/;"	s
+multiboot_info_t	src/multiboot.h	/^    } multiboot_info_t;$/;"	t	typeref:struct:multiboot_info
+num	src/multiboot.h	/^      unsigned long num;$/;"	m	struct:elf_section_header_table
+num_buffer	src/otty.c	/^char num_buffer[NUM_BUFFER_LEN];$/;"	v
+obish	src/obish.c	/^void obish(){$/;"	f
+otty_clear	src/otty.c	/^void otty_clear(){$/;"	f
+otty_init	src/otty.c	/^void otty_init(void) {$/;"	f
+print_mmap_info	src/memory.c	/^void print_mmap_info(){$/;"	f
+print_num	src/otty.c	/^void print_num(uint32_t n) {$/;"	f
+print_num_base	src/otty.c	/^void print_num_base(uint32_t n,uint32_t base) {$/;"	f
+print_num_hex	src/otty.c	/^void print_num_hex(uint32_t n) {$/;"	f
+print_num_hex_ln	src/otty.c	/^void print_num_hex_ln(uint32_t n) {$/;"	f
+print_num_ln	src/otty.c	/^void print_num_ln(uint32_t n) {$/;"	f
+print_str	src/otty.c	/^void print_str(const char* data) {$/;"	f
+print_str_ln	src/otty.c	/^void print_str_ln(const char* data) {$/;"	f
+ram_len	src/memory.c	/^uint64_t ram_len=0;$/;"	v
+ram_len	src/memory.h	/^uint32_t ram_len;$/;"	v
+reserved	src/multiboot.h	/^      unsigned long reserved;$/;"	m	struct:aout_symbol_table
+reserved	src/multiboot.h	/^      unsigned long reserved;$/;"	m	struct:module
+shndx	src/multiboot.h	/^      unsigned long shndx;$/;"	m	struct:elf_section_header_table
+size	src/multiboot.h	/^      unsigned long size;$/;"	m	struct:elf_section_header_table
+size	src/multiboot.h	/^      unsigned long size;$/;"	m	struct:memory_map
+stack_bottom	src/boot.s	/^stack_bottom:$/;"	l
+stack_top	src/boot.s	/^stack_top:$/;"	l
+string	src/multiboot.h	/^      unsigned long string;$/;"	m	struct:module
+strlen	src/otty.c	/^uint32_t strlen(const char* str) {$/;"	f
+strsize	src/multiboot.h	/^      unsigned long strsize;$/;"	m	struct:aout_symbol_table
+tabsize	src/multiboot.h	/^      unsigned long tabsize;$/;"	m	struct:aout_symbol_table
+terminal_buffer	src/otty.c	/^uint16_t* terminal_buffer;$/;"	v
+terminal_color	src/otty.c	/^uint8_t terminal_color;$/;"	v
+terminal_column	src/otty.c	/^uint32_t terminal_column;$/;"	v
+terminal_history	src/otty.c	/^uint16_t terminal_history[80][4096];$/;"	v
+terminal_history_index	src/otty.c	/^uint32_t terminal_history_index = 0;$/;"	v
+terminal_putchar	src/otty.c	/^void terminal_putchar(char c) {$/;"	f
+terminal_putentryat	src/otty.c	/^void terminal_putentryat(char c, uint8_t color, uint32_t x, uint32_t y) {$/;"	f
+terminal_row	src/otty.c	/^uint32_t terminal_row;$/;"	v
+terminal_scroll	src/otty.c	/^void terminal_scroll(uint32_t value){$/;"	f
+terminal_scroll_index	src/otty.c	/^uint32_t terminal_scroll_index = 0;$/;"	v
+terminal_scroll_rel	src/otty.c	/^void terminal_scroll_rel(uint32_t delta){$/;"	f
+terminal_setcolor	src/otty.c	/^void terminal_setcolor(uint8_t color) {$/;"	f
+terminal_write	src/otty.c	/^void terminal_write(const char* data, uint32_t size) {$/;"	f
+type	src/multiboot.h	/^      unsigned long type;$/;"	m	struct:memory_map
+u	src/multiboot.h	/^      } u;$/;"	m	struct:multiboot_info	typeref:union:multiboot_info::__anon2
+vga_color	src/otty.c	/^enum vga_color {$/;"	g	file:
+vga_entry	src/otty.c	/^static inline uint16_t vga_entry(unsigned char uc, uint8_t color) {$/;"	f	file:
+vga_entry_color	src/otty.c	/^static inline uint8_t vga_entry_color(enum vga_color fg, enum vga_color bg) {$/;"	f	file:
