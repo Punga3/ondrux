@@ -42,7 +42,7 @@ uint32_t terminal_row;
 uint32_t terminal_column;
 uint8_t terminal_color;
 uint16_t* terminal_buffer;
-uint16_t terminal_history[80][4096];
+uint16_t terminal_history[4096][80];
 uint32_t terminal_history_index = 0;
 uint32_t terminal_scroll_index = 0;
 
